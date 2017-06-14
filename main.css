@@ -1,0 +1,26 @@
+/** {
+  border: 2px solid black;
+}*/
+
+#board {
+  border: 2px solid black;
+  height: 300px;
+  /*width: 100%;*/
+  border-collapse: collapse;
+}
+
+#board tr {
+  border-bottom-style: solid;
+  width: 20px;
+  height: 20px;
+}
+
+td {
+  border: 2px solid black;
+  width: 20px;
+  height: 20px;
+}
+
+.lose {
+  background-color: blue;
+}
