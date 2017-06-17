@@ -44,6 +44,8 @@ $(document).ready(function(){
       $("td").off("click")
       $("#torpedos").text("No more torpedos. You Lost!!!!")
 
+
+      //
       // for (var x = 0; x <= board.length; x++) {
       //   alert("1")
       //   for (var y = 0; y <= board.length; y++) {
@@ -74,17 +76,25 @@ var board =      [[0,0,0,0,0,0,0,0,0,0],
                   [0,0,0,0,0,0,0,0,0,0],
                   [0,0,0,0,0,0,0,0,0,0] ]
 
+var shipOne = [4,7]
+var shipOne = []
+var shipOne = []
+var shipOne = []
+var shipOne = []
 
+var computer = []
 function randomizerShip() {
   for (i = 1; i<=5; i++) {
     var shipRow = Math.floor(Math.random()*10)
-    // console.log(shipRow);
+    computer.push(shipRow)
     var shipCol = Math.floor(Math.random()*10)
-    // console.log(shipCol);
+    computer.push(shipCol)
     board[shipRow][shipCol] = 1
   }
 }
 randomizerShip()
+console.log(computer)
+
 
 //
 // for (var i = 0; i <= board.length; i++) {
